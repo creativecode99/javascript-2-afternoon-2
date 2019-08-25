@@ -19,7 +19,9 @@ var arr = [10,20,30];
 
 function first (arr){
 return arr[0]
-}//Code Here
+}
+
+//Code Here
 
 
 
@@ -36,8 +38,10 @@ var arr = [40,50,60];
 */
 
   function last (arr){
-return arr.length
-}    //Code Here
+return arr[arr.length - 1]
+}    
+
+//Code Here
 
 
 
@@ -75,7 +79,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 function reversedLooper (letters){
-  for (let i= 0 ; i < length.letters; i++){
+  for (let i= letters.length -1 ; i >= 0; i--){
+    alert(letters[i]);
+}
 }
 
 
@@ -93,11 +99,13 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 function evenFinder (nums){
-  for (let i=1; i<nums; i++){
-    if(i % 2 === 0) {
-      console.log(i);
+  let numEven = [];
+  for (let i=0; i < nums.length; i++){
+    if(nums[i] % 2 === 0) {
+      numEven.push(nums[i]);
     }
   }
+  return numEven;
 }
 
 
@@ -338,6 +346,6 @@ var user1 = {
 
 
 
-/*
-  The activity we just did is very much how data works in 'the real world'.
-*/
+
+  // The activity we just did is very much how data works in 'the real world'.
+
